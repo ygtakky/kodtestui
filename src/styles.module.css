@@ -1,9 +1,43 @@
 /* add css module styles here (optional) */
 
-.test {
-  margin: 2em;
+.btn {
+  background-color: white;
   padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+  border-radius: 4px;
+  border: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #f5f5f5;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn--primary {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background-color: #46a049;
+}
+
+.btn--dashed {
+  border: 1px dashed #ccc;
+}
+
+.btn--text {
+  border: none;
+}
+
+.btn--link {
+  color:rgb(44, 44, 255);
+}
+
+.btn--link:hover {
+  background-color: inherit;
+  color:rgb(24, 24, 219);
 }

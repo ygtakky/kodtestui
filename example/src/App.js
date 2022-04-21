@@ -1,10 +1,33 @@
 import React from 'react'
 
-import { ExampleComponent } from 'kodtestui'
+import { Button } from 'kodtestui'
 import 'kodtestui/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div
+      style={{
+        minHeight: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        padding: '5px',
+        alignItems: 'center'
+      }}
+    >
+      <div style={{ margin: '10px' }}>
+        <Button type='primary'>Primary</Button>
+      </div>
+      <div style={{ margin: '10px' }}>
+        <Button type='dashed'>Dashed</Button>
+      </div>
+      <div style={{ margin: '10px' }}>
+        <Button type='text'>Text</Button>
+      </div>
+      <div style={{ margin: '10px' }}>
+        <Button type='link'>Link</Button>
+      </div>
+    </div>
+  )
 }
 
 export default App
